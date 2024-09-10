@@ -5,15 +5,21 @@ Given a scenario composed of a RAID level T ("0", "1", "01", "10", "4", or "5"),
 
 # Restrictions
 Hard disks are numbered from 0 to N-1. N is in the range [2,16].
+  
   -N is always 2 for RAID level 1.
+
   -N is always an even number greater than 3 for RAID levels 01 and 10.
+  
   -N is always greater than 2 for RAID levels 4 and 5.
   
 Chunk size C is a number in the range [1,16] for RAID level 0.
+  
   -C is always 1 for other RAID levels.
   
 Stripes and disk sectors are numbered from 0 to S-1.
+  
   -The number of sectors per disk S is greater than 1 and is always a multiple of C.
+  
   -S is in the order of billions.
   
 The number of queries Q is in the order of millions.
