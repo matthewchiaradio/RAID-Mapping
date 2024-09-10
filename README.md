@@ -29,3 +29,7 @@ The first line of input has 5 items in this order: T, N, C, S, and Q. Follow Q l
 
 # Output Format
 For each query, print one line in the output. Each line has two or three numbers. The first number is the hard disk number ([0,N-1]) that contains the queried sector. If more than one disk has a copy of the queried sector, print the one with the smaller number (for RAID levels 1, 01, and 10). The second number is the stripe ([0,S-1]) that contains the queried sector. The third number is the hard disk number ([0,N-1]) that contains the second copy of the queried sector for RAID levels 1, 01, and 10, or the hard disk number ([0,N-1]) that contains the parity affected by the queried sector for RAID levels 4 and 5.
+
+# Running main.c
+Compile main.c using the makefile then run the executable.
+If the makefile does not perform correctly, then enter "gcc main.c -o raid" to the terminal and run the executable.
